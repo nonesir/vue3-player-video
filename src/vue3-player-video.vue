@@ -55,13 +55,6 @@ export default /*#__PURE__*/defineComponent({
       },
     }
   },
-  created () {
-    window.addEventListener('keyup', ({ keyCode }) => {
-      if (keyCode === 32) {
-        this.play()
-      }
-    })
-  },
   watch:{
     'time.current' (value) {
       this.time.display = this.format(Number(value))
